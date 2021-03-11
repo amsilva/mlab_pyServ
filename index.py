@@ -8,8 +8,8 @@ class handler(BaseHTTPRequestHandler):
         self.send_header('Content-type','text/plain')
         self.end_headers()
         if "name" in dic:
-            message = "Hello, " + dic["name"] + "!"
+            message = "Hello, sr. " + dic["name"] + "!"
         else:
-            message = "Hello, stranger!"
+            message = "Hello, stranger things!"
         self.wfile.write(message.encode())
         return
